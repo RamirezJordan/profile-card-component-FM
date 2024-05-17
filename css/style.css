@@ -1,0 +1,130 @@
+:root {
+    /* Primary Color*/
+    --White: hsl(0, 0%, 100%);
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+    /* Neutral Color*/
+    --Dark-gray: hsl(0, 0%, 59%);
+
+    /* Font */
+    --main-font: "Kumbh Sans", sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 1.8rem;
+    /* Put 2 svg's as a background*/
+    background:
+        url(/images/bg-pattern-bottom.svg) bottom -600px right -150px no-repeat,
+        url(/images/bg-pattern-top.svg) top -500px left -200px no-repeat;
+    background-color: var(--Dark-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+span {
+    color: var(--Dark-gray);
+}
+
+.container {
+    max-width: 40rem;
+    width: 90%;
+    margin: 10rem auto;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.principal-container {
+    background-color: var(--White);
+    padding: 2rem;
+    text-align: center;
+}
+
+.header {
+    background-image: url(/images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    width: 100%;
+}
+
+.profile {
+    border-bottom: 1px solid var(--Dark-grayish-blue);
+}
+
+.profile--country {
+    margin-top: 0;
+    font-size: 1.6rem;
+}
+
+.profile--photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    background-image: url(/images/image-victor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    border: .5rem solid var(--White);
+    margin-top: -7rem;
+}
+
+.profile__data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile__data h2 {
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.stat--number {
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.stat--title {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
